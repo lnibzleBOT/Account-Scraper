@@ -24,7 +24,7 @@ print("Discord: discord.gg/HMMGKdC")
 
 
 
-queryparameter = input("KeyWord(Steam,Spotify....) : ")
+queryparameter = input("Put KeyWords Here : ")
 print("Scanning Process Starting")
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--headless")
