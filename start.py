@@ -4,6 +4,14 @@ try:
     os.mkdir("accounts")
 except OSError:
     print("")
+welcome = """
+|||||        Account-Scraper                 |||||
+
+ ||||        Coded By : @Galerici             ||||
+
+  
+"""
+print(welcome)
 queryparameter = input("KeyWord(Steam,Spotify....) : ")
 print("Scanning Process Starting")
 chrome_options = webdriver.ChromeOptions()
