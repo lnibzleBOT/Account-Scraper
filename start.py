@@ -1,17 +1,29 @@
+import colorama
 from selenium import webdriver
+from colorama import Fore, init
 import requests,os,time,re
 try:
     os.mkdir("accounts")
 except OSError:
     print("")
-welcome = """
-|||||        Account-Scraper                 |||||
 
- ||||        Coded By : @Galerici             ||||
+print("""\
 
-  
-"""
-print(welcome)
+ █████╗  ██████╗ ██████╗ ██████╗ ██╗   ██╗███╗   ██╗████████╗    ███████╗ ██████╗██████╗  █████╗ ██████╗ ███████╗██████╗ 
+██╔══██╗██╔════╝██╔════╝██╔═══██╗██║   ██║████╗  ██║╚══██╔══╝    ██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
+███████║██║     ██║     ██║   ██║██║   ██║██╔██╗ ██║   ██║       ███████╗██║     ██████╔╝███████║██████╔╝█████╗  ██████╔╝
+██╔══██║██║     ██║     ██║   ██║██║   ██║██║╚██╗██║   ██║       ╚════██║██║     ██╔══██╗██╔══██║██╔═══╝ ██╔══╝  ██╔══██╗
+██║  ██║╚██████╗╚██████╗╚██████╔╝╚██████╔╝██║ ╚████║   ██║       ███████║╚██████╗██║  ██║██║  ██║██║     ███████╗██║  ██║
+╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝       ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝
+                                                                                                                         
+                                                       
+ """ )
+
+print("Discord: discord.gg/HMMGKdC")
+
+
+
+
 queryparameter = input("KeyWord(Steam,Spotify....) : ")
 print("Scanning Process Starting")
 chrome_options = webdriver.ChromeOptions()
